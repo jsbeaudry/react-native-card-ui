@@ -1,6 +1,6 @@
 {
   "name": "react-native-card-ui",
-  "version": "1.0.2",
+  "version": "1.0.28",
   "description": "cards",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/beaudry1991/react-native-card-ui.git"
+    "url": "git+ssh://git@github.com/jsbeaudry/react-native-card-ui.git"
   },
   "keywords": [
     "cards"
@@ -16,7 +16,15 @@
   "author": "jsb",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/beaudry1991/react-native-card-ui/issues"
+    "url": "https://github.com/jsbeaudry/react-native-card-ui/issues"
   },
-  "homepage": "https://github.com/beaudry1991/react-native-card-ui#readme"
+  "dependencies": {
+    "react-native-size-matters": "^0.1.0",
+    "react-native-vector-icons": "^6.3.0"
+  },
+  "peerDependencies": {
+    "react-native-size-matters": "^0.1.0",
+    "react-native-vector-icons": "^6.3.0"
+  },
+  "homepage": "https://github.com/jsbeaudry/react-native-card-ui#readme"
 }
