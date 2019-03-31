@@ -1,60 +1,126 @@
 # react-native-card-ui
 
-![alt text][logo]
-
 react-native-card-ui is a ui library that help developer to create beautiful react native ios and android application by coding less .
 
 # Dependences
 
 react-native-card-ui uses some others libraries like:
 
-* [react-native-size-matters] - for scale the ui screen
-* [react-native-vector-icons] - for icons
-
+- [react-native-size-matters] - for scale the ui screen
+- [react-native-vector-icons] - for icons
 
 And of course react-native-card-ui itself is open source with a [public repository][crcui]
- on GitHub.
+on GitHub.
 
 ### Installation
+
 Install the dependencies need to work well.
 
-### Let's install  react-native-vector-icons
+### Let's install react-native-vector-icons
+
 ```sh
 $ cd approot
 $ npm install react-native-vector-icons
 $ react-native link react-native-vector-icons
 ```
-### Let's install  react-native-size-matters
+
+### Let's install react-native-size-matters
+
 ```sh
 $ cd approot
 $ npm install --save react-native-size-matters
 ```
-### Now let's install  react-native-card-ui
 
+### Now let's install react-native-card-ui
 
 ```sh
 $ npm install --save react-native-card-ui
-
 ```
-###  CardOne
+
+### CardEcomOne
+
+![alt text][cardecom1]
+
+```sh
+        <CardEcomOne
+            title={"NIKE SILVER"}
+            price={"$200"}
+            image={require("./nikesilver.png")} //OR {{uri:"http://......"}}
+            icon={"star"}
+            nbStar={3}
+            iconColor={"#FFC57C"}
+            colorList={["#000000", "#0b8457", "#7ed3b2"]}
+            selectColor={"#000000"}
+            getSelectColor={color => alert(color)}
+          />
+```
+
+### CardEcomTwo
+
+![alt text][cardecom2]
+
+```sh
+        <CardEcomTwo
+            title={"Porsche Rubber"}
+            subTitle={ "Zermatt is famed as a mounering and ski destome banmdo liono"}
+            price={"$200"}
+            image= {require("./montre.png")} // OR {{uri:"http://......"}}
+          />
+```
+
+### CardEcomThree
+
+![alt text][cardecom3]
+
+```sh
+        <CardEcomThree
+            title={"Porsche Rubber"}
+            subTitle={"Zermatt is famed as a mounering and ski destome banmdo liono"}
+            price={"$200"}
+            image={require("./sac.png")} // OR {{uri:"http://......"}}
+            buttonText={"Buy now"}
+            buttonColor={"#ff2788"}
+            onClickButton={() => alert("Has clicked")}
+          />
+```
+
+### CardEcomFour
+
+![alt text][cardecom4]
+
+```sh
+        <CardEcomFour
+            title={"Porsche Rubber"}
+            subTitle={"Zermatt is famed as a mounering and ski destome banmdo liono"}
+            price={"$200"}
+            image={require("./acg.png")}
+            buttonText={"VIEW DETAILS"}
+            buttonColor={"#4383FF"}
+            onClickButton={() => alert("Has clicked")}
+          />
+```
+
+### CardOne
+
+![alt text][card1]
+
 ```sh
         <CardOne
             height={100}
             width={100}
             borderRadius={20}
             shadowColor={"blue"}
-            image={{
-              uri:
-                "https://cdn.pixabay.com/photo/2015/09/18/11/46/tube-945487_960_720.jpg"
-            }}
+            image={require("./placeholderImage.jpg")} // OR {{uri:"http://......"}}
           />
-
 ```
 
-###  CardTwo
+### CardTwo
+
+![alt text][card2]
+
 ```sh
         <CardTwo
-            title={"John Bob"}
+            title={"John Bob will"}
             subTitle={"Devlopper"}
             profile={{
               uri:
@@ -62,14 +128,17 @@ $ npm install --save react-native-card-ui
             }}
             image={{
               uri:
-                "https://www.codeapjn.club/wp-content/uploads/2018/11/cute-small-houses-bloxburg-2-story-interior-design-photos-gallery-o-ideas-delightful-bungalow-single-house-plans-beautiful-is-a-two-plan-with-3-bedrooms-baths-728x546.jpg"
+                "https://www.gettyimages.com/gi-resources/images/frontdoor/creative/PanoramicImagesRM/FD_image.jpg"
             }}
             icon={"apple"}
             iconColor={"red"}
           />
-
 ```
-###  CardThree
+
+### CardThree
+
+![alt text][card3]
+
 ```sh
         <CardThree
             title={"John Bob"}
@@ -81,9 +150,12 @@ $ npm install --save react-native-card-ui
             icon={"forward"}
             iconColor={"grey"}
           />
-
 ```
-###  CardFour
+
+### CardFour
+
+![alt text][card4]
+
 ```sh
         <CardFour
             onClicked={() => {
@@ -91,7 +163,7 @@ $ npm install --save react-native-card-ui
             }}
             image={{
               uri:
-                "http://www.la-muse.ch/wp-content/uploads/2015/08/bmp_Image004.bmp"
+                "https://www.gettyimages.com/gi-resources/images/frontdoor/creative/PanoramicImagesRM/FD_image.jpg"
             }}
             date={"24 December 2018"}
             off={"-25%"}
@@ -100,11 +172,14 @@ $ npm install --save react-native-card-ui
             }
             buttonText={"BUY NOW!"}
           />
-
 ```
-###  CardFive
+
+### CardFive
+
+![alt text][card5]
+
 ```sh
-        <CardFive
+          <CardFive
             title={"Vinny’s Barber"}
             subTitle={"852 N Virgil Ave, Beverly Hills"}
             profile={{
@@ -119,11 +194,15 @@ $ npm install --save react-native-card-ui
             nbStar={3}
             iconColor={"#FFC57C"}
           />
-
 ```
-###  CardSix
+
+### CardSix
+
+![alt text][card6]
+
 ```sh
-        <CardSix
+
+           <CardSix
             title={"Vinny’s Barber"}
             subTitle={"852 N Virgil Ave, Beverly Hills"}
             profile={{
@@ -147,16 +226,16 @@ $ npm install --save react-native-card-ui
               alert("Hello!");
             }}
           />
-
 ```
-###  CardSeven
+
+### CardSeven
+
+![alt text][card7]
+
 ```sh
-        <CardSeven
+      <CardSeven
             title={"Vinny’s Barber"}
             subTitle={"852 N Virgil Ave, Beverly Hills"}
-            profile={{
-              uri: "https://img.ev.mu/images/articles/960x/843519.jpg"
-            }}
             image={{
               uri:
                 "http://www.bretagne-paysage.fr/sites/bretagn2016/files/styles/large/public/diaporama/paysagiste-plerin_5.jpg?itok=9Qyy75zj"
@@ -174,9 +253,12 @@ $ npm install --save react-native-card-ui
               alert("Hello!");
             }}
           />
-
 ```
-###  CardEight
+
+### CardEight
+
+![alt text][card8]
+
 ```sh
         <CardEight
             image1={{
@@ -191,12 +273,15 @@ $ npm install --save react-native-card-ui
               uri: "https://img.ev.mu/images/articles/960x/450056.jpg"
             }}
           />
-
 ```
-###  CardNine
+
+### CardNine
+
+![alt text][card9]
+
 ```sh
           <CardNine
-            title={"Red Stake"}
+            title={"Crazy House"}
             subTitle={
               "Lorem ipsum dolor sit amet, consectetuer adipiscin elit, sed diam nonummy nibh euismod"
             }
@@ -209,9 +294,12 @@ $ npm install --save react-native-card-ui
               alert("Hello!");
             }}
           />
-
 ```
-###  CardTen
+
+### CardTen
+
+![alt text][card10]
+
 ```sh
         <CardTen
             title={"Sweety Cake"}
@@ -222,10 +310,14 @@ $ npm install --save react-native-card-ui
             }}
             price={33.5}
             star={3}
+            starsFor={"240 reviews"}
           />
-
 ```
-###  CardEleven
+
+### CardEleven
+
+![alt text][card11]
+
 ```sh
         <CardEleven
             price={"$900/month"}
@@ -248,24 +340,42 @@ $ npm install --save react-native-card-ui
             onClickedShare={() => alert("Hello")}
             onClickedPlus={() => alert("Hello")}
           />
-
 ```
-###  Card12
+
+### CardTwelve
+
+![alt text][card12]
+
 ```sh
-        <Card12
+        <CardTwelve
             image={{
               uri:
                 "https://i.pinimg.com/originals/c4/9b/f9/c49bf95e4e02873610daf3bfda54e44a.jpg"
             }}
-            coursName={"test name"}
-            teachBy={"John Bpb"}
+            title={"Card name"}
+            subTitle={"John Bob"}
             viewProgress={true}
             progress={2}
           />
-
 ```
 
-   [react-native-size-matters]: <https://www.npmjs.com/package/react-native-size-matters>
-   [react-native-vector-icons]: <https://github.com/oblador/react-native-vector-icons>
-   [crcui]: https://github.com/jsbeaudry/react-native-card-ui
-  [logo]: https://res.cloudinary.com/parkour/image/upload/v1552592294/categories/allcards.png
+[react-native-size-matters]: https://www.npmjs.com/package/react-native-size-matters
+[react-native-vector-icons]: https://github.com/oblador/react-native-vector-icons
+[crcui]: https://github.com/jsbeaudry/react-native-card-ui
+[logo]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_1.png
+[cardecom1]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_1.png
+[cardecom2]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_2.png
+[cardecom3]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_3.png
+[cardecom4]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_4.png
+[card1]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_1.png
+[card2]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_2.png
+[card3]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_3.png
+[card4]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_4.png
+[card5]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_5.png
+[card6]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_6.png
+[card7]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_7.png
+[card8]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_8.png
+[card9]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_9.png
+[card10]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_10.png
+[card11]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_11.png
+[card12]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_12.png
