@@ -27,14 +27,13 @@ import {
   CardNine,
   CardTen,
   CardEleven,
-  Card12
+  CardTwelve,
+  CardEcomOne,
+  CardEcomTwo,
+  CardEcomThree,
+  CardEcomFour
 } from "react-native-card-ui";
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-});
+
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -42,8 +41,57 @@ export default class App extends Component<Props> {
     return (
       <SafeAreaView style={styles.container}>
         <ScrollView>
+          <CardEcomFour
+            title={"Porsche Rubber"}
+            subTitle={
+              "Zermatt is famed as a mounering and ski destome banmdo liono"
+            }
+            price={"$200"}
+            image={require("./acg.png")}
+            buttonText={"VIEW DETAILS"}
+            buttonColor={"#4383FF"}
+            onClickButton={() => alert("Has clicked")}
+          />
+          <CardEcomThree
+            title={"Porsche Rubber"}
+            subTitle={
+              "Zermatt is famed as a mounering and ski destome banmdo liono"
+            }
+            price={"$200"}
+            image={require("./sac.png")}
+            buttonText={"Buy now"}
+            buttonColor={"#ff2788"}
+            onClickButton={() => alert("Has clicked")}
+          />
+          <CardEcomTwo
+            title={"Porsche Rubber"}
+            subTitle={
+              "Zermatt is famed as a mounering and ski destome banmdo liono"
+            }
+            price={"$200"}
+            image={{ uri: "http://......" }} // OR {require("./montre.png")}
+          />
+          <CardEcomOne
+            title={"NIKE SILVER"}
+            price={"$200"}
+            image={{ uri: "http://......" }} //OR {require("./nikesilver.png")}
+            icon={"star"}
+            nbStar={3}
+            iconColor={"#FFC57C"}
+            colorList={["#000000", "#0b8457", "#7ed3b2"]}
+            selectColor={"#000000"}
+            getSelectColor={color => alert(color)}
+          />
+
+          <CardOne
+            height={100}
+            width={100}
+            borderRadius={20}
+            shadowColor={"blue"}
+            image={require("./placeholderImage.jpg")}
+          />
           <CardTwo
-            title={"John Bob"}
+            title={"John Bob will"}
             subTitle={"Devlopper"}
             profile={{
               uri:
@@ -51,7 +99,7 @@ export default class App extends Component<Props> {
             }}
             image={{
               uri:
-                "https://www.codeapjn.club/wp-content/uploads/2018/11/cute-small-houses-bloxburg-2-story-interior-design-photos-gallery-o-ideas-delightful-bungalow-single-house-plans-beautiful-is-a-two-plan-with-3-bedrooms-baths-728x546.jpg"
+                "https://www.gettyimages.com/gi-resources/images/frontdoor/creative/PanoramicImagesRM/FD_image.jpg"
             }}
             icon={"apple"}
             iconColor={"red"}
@@ -73,7 +121,7 @@ export default class App extends Component<Props> {
             }}
             image={{
               uri:
-                "http://www.la-muse.ch/wp-content/uploads/2015/08/bmp_Image004.bmp"
+                "https://www.gettyimages.com/gi-resources/images/frontdoor/creative/PanoramicImagesRM/FD_image.jpg"
             }}
             date={"24 December 2018"}
             off={"-25%"}
@@ -127,9 +175,6 @@ export default class App extends Component<Props> {
           <CardSeven
             title={"Vinny’s Barber"}
             subTitle={"852 N Virgil Ave, Beverly Hills"}
-            profile={{
-              uri: "https://img.ev.mu/images/articles/960x/843519.jpg"
-            }}
             image={{
               uri:
                 "http://www.bretagne-paysage.fr/sites/bretagn2016/files/styles/large/public/diaporama/paysagiste-plerin_5.jpg?itok=9Qyy75zj"
@@ -162,7 +207,7 @@ export default class App extends Component<Props> {
           />
 
           <CardNine
-            title={"Red Stake"}
+            title={"Crazy House"}
             subTitle={
               "Lorem ipsum dolor sit amet, consectetuer adipiscin elit, sed diam nonummy nibh euismod"
             }
@@ -176,16 +221,6 @@ export default class App extends Component<Props> {
             }}
           />
 
-          <CardOne
-            height={100}
-            width={100}
-            borderRadius={20}
-            shadowColor={"blue"}
-            image={{
-              uri:
-                "https://cdn.pixabay.com/photo/2015/09/18/11/46/tube-945487_960_720.jpg"
-            }}
-          />
           <View style={{ marginBottom: 80 }} />
           <CardTen
             title={"Sweety Cake"}
@@ -196,6 +231,7 @@ export default class App extends Component<Props> {
             }}
             price={33.5}
             star={3}
+            starsFor={"240 reviews"}
           />
 
           <CardEleven
@@ -220,13 +256,13 @@ export default class App extends Component<Props> {
             onClickedPlus={() => alert("Hello")}
           />
 
-          <Card12
+          <CardTwelve
             image={{
               uri:
                 "https://i.pinimg.com/originals/c4/9b/f9/c49bf95e4e02873610daf3bfda54e44a.jpg"
             }}
-            coursName={"test name"}
-            teachBy={"John Bpb"}
+            title={"Card name"}
+            subTitle={"John Bob"}
             viewProgress={true}
             progress={2}
           />
@@ -242,7 +278,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "#fff"
   },
   welcome: {
     fontSize: 20,
