@@ -6,41 +6,37 @@ react-native-card-ui is a ui library that help developer to create beautiful rea
 
 react-native-card-ui uses some others libraries like:
 
-- [react-native-size-matters] - for scale the ui screen
-- [react-native-vector-icons] - for icons
+* [react-native-size-matters] - for scale the ui screen
+* [react-native-vector-icons] - for icons
+
 
 And of course react-native-card-ui itself is open source with a [public repository][crcui]
-on GitHub.
+ on GitHub.
 
 ### Installation
-
 Install the dependencies need to work well.
 
-### Let's install react-native-vector-icons
-
+### Let's install  react-native-vector-icons
 ```sh
 $ cd approot
 $ npm install react-native-vector-icons
 $ react-native link react-native-vector-icons
 ```
-
-### Let's install react-native-size-matters
-
+### Let's install  react-native-size-matters
 ```sh
 $ cd approot
 $ npm install --save react-native-size-matters
 ```
+### Now let's install  react-native-card-ui
 
-### Now let's install react-native-card-ui
 
 ```sh
 $ npm install --save react-native-card-ui
+
 ```
 
-### CardEcomOne
-
-![alt text][cardecom1]
-
+###  CardEcomOne
+![alt text][cardEcom4]
 ```sh
         <CardEcomOne
             title={"NIKE SILVER"}
@@ -53,41 +49,38 @@ $ npm install --save react-native-card-ui
             selectColor={"#000000"}
             getSelectColor={color => alert(color)}
           />
+
 ```
 
-### CardEcomTwo
-
-![alt text][cardecom2]
-
+###  CardEcomTwo
+![alt text][cardEcom3]
 ```sh
         <CardEcomTwo
             title={"Porsche Rubber"}
             subTitle={ "Zermatt is famed as a mounering and ski destome banmdo liono"}
             price={"$200"}
-            image= {require("./montre.png")} // OR {{uri:"http://......"}}
+            image= {require("./montre.png")} // OR {{uri:"http://......"}} 
           />
+
 ```
 
-### CardEcomThree
-
-![alt text][cardecom3]
-
+###  CardEcomThree
+![alt text][cardEcom2]
 ```sh
         <CardEcomThree
             title={"Porsche Rubber"}
             subTitle={"Zermatt is famed as a mounering and ski destome banmdo liono"}
             price={"$200"}
-            image={require("./sac.png")} // OR {{uri:"http://......"}}
+            image={require("./sac.png")} // OR {{uri:"http://......"}} 
             buttonText={"Buy now"}
             buttonColor={"#ff2788"}
             onClickButton={() => alert("Has clicked")}
           />
+
 ```
 
-### CardEcomFour
-
-![alt text][cardecom4]
-
+###  CardEcomFour
+![alt text][cardEcom1]
 ```sh
         <CardEcomFour
             title={"Porsche Rubber"}
@@ -98,26 +91,24 @@ $ npm install --save react-native-card-ui
             buttonColor={"#4383FF"}
             onClickButton={() => alert("Has clicked")}
           />
+
 ```
 
-### CardOne
-
+###  CardOne
 ![alt text][card1]
-
 ```sh
         <CardOne
             height={100}
             width={100}
             borderRadius={20}
             shadowColor={"blue"}
-            image={require("./placeholderImage.jpg")} // OR {{uri:"http://......"}}
+            image={require("./placeholderImage.jpg")} // OR {{uri:"http://......"}} 
           />
+
 ```
 
-### CardTwo
-
+###  CardTwo
 ![alt text][card2]
-
 ```sh
         <CardTwo
             title={"John Bob will"}
@@ -133,12 +124,10 @@ $ npm install --save react-native-card-ui
             icon={"apple"}
             iconColor={"red"}
           />
+
 ```
-
-### CardThree
-
+###  CardThree
 ![alt text][card3]
-
 ```sh
         <CardThree
             title={"John Bob"}
@@ -150,12 +139,10 @@ $ npm install --save react-native-card-ui
             icon={"forward"}
             iconColor={"grey"}
           />
+
 ```
-
-### CardFour
-
+###  CardFour
 ![alt text][card4]
-
 ```sh
         <CardFour
             onClicked={() => {
@@ -172,12 +159,10 @@ $ npm install --save react-native-card-ui
             }
             buttonText={"BUY NOW!"}
           />
+
 ```
-
-### CardFive
-
+###  CardFive
 ![alt text][card5]
-
 ```sh
           <CardFive
             title={"Vinny’s Barber"}
@@ -194,14 +179,12 @@ $ npm install --save react-native-card-ui
             nbStar={3}
             iconColor={"#FFC57C"}
           />
+
 ```
-
-### CardSix
-
+###  CardSix
 ![alt text][card6]
-
 ```sh
-
+        
            <CardSix
             title={"Vinny’s Barber"}
             subTitle={"852 N Virgil Ave, Beverly Hills"}
@@ -226,12 +209,10 @@ $ npm install --save react-native-card-ui
               alert("Hello!");
             }}
           />
+
 ```
-
-### CardSeven
-
+###  CardSeven
 ![alt text][card7]
-
 ```sh
       <CardSeven
             title={"Vinny’s Barber"}
@@ -253,12 +234,10 @@ $ npm install --save react-native-card-ui
               alert("Hello!");
             }}
           />
+
 ```
-
-### CardEight
-
+###  CardEight
 ![alt text][card8]
-
 ```sh
         <CardEight
             image1={{
@@ -273,12 +252,10 @@ $ npm install --save react-native-card-ui
               uri: "https://img.ev.mu/images/articles/960x/450056.jpg"
             }}
           />
+
 ```
-
-### CardNine
-
+###  CardNine
 ![alt text][card9]
-
 ```sh
           <CardNine
             title={"Crazy House"}
@@ -294,12 +271,10 @@ $ npm install --save react-native-card-ui
               alert("Hello!");
             }}
           />
+
 ```
-
-### CardTen
-
+###  CardTen
 ![alt text][card10]
-
 ```sh
         <CardTen
             title={"Sweety Cake"}
@@ -312,12 +287,10 @@ $ npm install --save react-native-card-ui
             star={3}
             starsFor={"240 reviews"}
           />
+
 ```
-
-### CardEleven
-
+###  CardEleven
 ![alt text][card11]
-
 ```sh
         <CardEleven
             price={"$900/month"}
@@ -340,12 +313,10 @@ $ npm install --save react-native-card-ui
             onClickedShare={() => alert("Hello")}
             onClickedPlus={() => alert("Hello")}
           />
+
 ```
-
-### CardTwelve
-
+###  CardTwelve
 ![alt text][card12]
-
 ```sh
         <CardTwelve
             image={{
@@ -357,25 +328,30 @@ $ npm install --save react-native-card-ui
             viewProgress={true}
             progress={2}
           />
-```
 
-[react-native-size-matters]: https://www.npmjs.com/package/react-native-size-matters
-[react-native-vector-icons]: https://github.com/oblador/react-native-vector-icons
-[crcui]: https://github.com/jsbeaudry/react-native-card-ui
-[logo]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_1.png
-[cardecom1]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_1.png
-[cardecom2]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_2.png
-[cardecom3]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_3.png
-[cardecom4]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_4.png
-[card1]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_1.png
-[card2]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_2.png
-[card3]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_3.png
-[card4]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_4.png
-[card5]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_5.png
-[card6]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_6.png
-[card7]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_7.png
-[card8]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_8.png
-[card9]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_9.png
-[card10]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_10.png
-[card11]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_11.png
-[card12]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_12.png
+```
+   
+   [react-native-size-matters]: <https://www.npmjs.com/package/react-native-size-matters>
+   [react-native-vector-icons]: <https://github.com/oblador/react-native-vector-icons>
+   [crcui]: https://github.com/jsbeaudry/react-native-card-ui
+  [logo]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_1.png
+  
+  [cardEcom1]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_1.png
+  [cardEcom2]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_2.png
+  [cardEcom3]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_3.png
+  [cardEcom4]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_ecom_4.png
+  
+  [card1]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_1.png
+  [card2]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_2.png
+  [card3]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_3.png
+  [card4]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_4.png
+  [card5]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_5.png
+  [card6]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_6.png
+  [card7]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_7.png
+  [card8]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_8.png
+  [card9]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_9.png
+  [card10]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_10.png
+  [card11]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_11.png
+  [card12]: https://res.cloudinary.com/parkour/image/upload/v1554050051/cardUI/card_12.png
+ 
+
